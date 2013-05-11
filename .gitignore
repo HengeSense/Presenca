@@ -1,0 +1,10 @@
+Presenca.esproj/user.pedro.espressostorage
+Presenca.esproj/Project.espressostorage
+Presenca.sublime-project
+Presenca.sublime-workspace
+.idea
+.DS_Store
+.htaccess
+error_log
+Web/uploads
+Web/includes/connection.php
