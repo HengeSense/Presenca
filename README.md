@@ -1,6 +1,9 @@
 Presença
 ========
 
+Português
+========
+
 Presença é um ERP open-source e minimalista. Criando ferramentas individuais que são simples de usar, o projeto pretende oferecer uma fácil integração para plataformas que desejem utilizar estas ferramentas dentro de seus sistemas.
 
 O Estúdio Trilha também oferece a versão pronta para uso do Presença, atualmente hospedada em http://negociopresente.com.br/ e disponível gratuitamente para uso público. Além da versão Web, conta também com aplicativos para iOS e Android.
@@ -12,9 +15,6 @@ O projeto encontra-se em desenvolvimento, contando com:
 - Projetos
 - Grupos
 - Clientes
-
-Português
-========
 
 Instalação
 --------
