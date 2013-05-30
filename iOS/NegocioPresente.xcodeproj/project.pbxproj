@@ -9,13 +9,6 @@
 /* Begin PBXBuildFile section */
 		EB0D199A165D9C40008E2FFB /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB0D1999165D9C40008E2FFB /* Default-568h@2x.png */; };
 		EB0D199C165DABEE008E2FFB /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0D199B165DABEE008E2FFB /* libsqlite3.dylib */; };
-		EB0D199F165DAC45008E2FFB /* DatabaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0D199E165DAC45008E2FFB /* DatabaseViewController.m */; };
-		EB0D19C3165DE47F008E2FFB /* UIScrollViewInfinitePagingController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0D19C2165DE47F008E2FFB /* UIScrollViewInfinitePagingController.m */; };
-		EB0D19DC165E8686008E2FFB /* InfoContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0D19DB165E8685008E2FFB /* InfoContainerViewController.m */; };
-		EB0D19DF165E9AF7008E2FFB /* UtilitiesController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0D19DE165E9AF6008E2FFB /* UtilitiesController.m */; };
-		EB0D19E2165E9F36008E2FFB /* UITableViewDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0D19E1165E9F36008E2FFB /* UITableViewDataController.m */; };
-		EB0D19E6165EA29C008E2FFB /* PanelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0D19E4165EA299008E2FFB /* PanelViewController.m */; };
-		EB0D19E7165EA29C008E2FFB /* PanelViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB0D19E5165EA29A008E2FFB /* PanelViewController_iPhone.xib */; };
 		EB39391816654A4E00580A4E /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3938FC16654A4E00580A4E /* GTMNSString+HTML.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		EB39391916654A4E00580A4E /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3938FE16654A4E00580A4E /* NSString+HTML.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w"; }; };
 		EB39391A16654A4E00580A4E /* FacingView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB39390216654A4E00580A4E /* FacingView.m */; };
@@ -34,30 +27,11 @@
 		EB40F648165C0BED00DB343C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB40F647165C0BED00DB343C /* CoreGraphics.framework */; };
 		EB40F64E165C0BED00DB343C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EB40F64C165C0BED00DB343C /* InfoPlist.strings */; };
 		EB40F650165C0BED00DB343C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB40F64F165C0BED00DB343C /* main.m */; };
-		EB40F654165C0BED00DB343C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB40F653165C0BED00DB343C /* AppDelegate.m */; };
 		EB40F656165C0BED00DB343C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = EB40F655165C0BED00DB343C /* Default.png */; };
 		EB40F658165C0BED00DB343C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB40F657165C0BED00DB343C /* Default@2x.png */; };
-		EB40F65D165C0BED00DB343C /* SlidingMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB40F65C165C0BED00DB343C /* SlidingMenuViewController.m */; };
 		EB40F697165C121900DB343C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB40F696165C121900DB343C /* QuartzCore.framework */; };
 		EB40F6A6165C139B00DB343C /* cellBg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB40F6A4165C139B00DB343C /* cellBg@2x.png */; };
 		EB40F6A7165C139B00DB343C /* cellBgSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB40F6A5165C139B00DB343C /* cellBgSelected@2x.png */; };
-		EB40F6AB165C149200DB343C /* MembersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB40F6A9165C149200DB343C /* MembersViewController.m */; };
-		EB40F6AC165C149200DB343C /* MembersViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB40F6AA165C149200DB343C /* MembersViewController_iPhone.xib */; };
-		EB40F6B0165C14CF00DB343C /* ProjectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB40F6AE165C14CF00DB343C /* ProjectsViewController.m */; };
-		EB40F6B1165C14CF00DB343C /* ProjectsViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB40F6AF165C14CF00DB343C /* ProjectsViewController_iPhone.xib */; };
-		EB40F6B5165C294000DB343C /* ClientsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB40F6B3165C293F00DB343C /* ClientsViewController.m */; };
-		EB40F6B6165C294000DB343C /* ClientsViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB40F6B4165C294000DB343C /* ClientsViewController_iPhone.xib */; };
-		EB40F6BA165C294A00DB343C /* ConsultantsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB40F6B8165C294900DB343C /* ConsultantsViewController.m */; };
-		EB40F6BB165C294A00DB343C /* ConsultantsViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB40F6B9165C294A00DB343C /* ConsultantsViewController_iPhone.xib */; };
-		EB40F6BF165C298D00DB343C /* PresencaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB40F6BD165C298C00DB343C /* PresencaViewController.m */; };
-		EB40F6C0165C298D00DB343C /* PresencaViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB40F6BE165C298D00DB343C /* PresencaViewController_iPhone.xib */; };
-		EB40F6C4165C29D000DB343C /* GroupsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB40F6C2165C29CF00DB343C /* GroupsViewController.m */; };
-		EB40F6C5165C29D000DB343C /* GroupsViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB40F6C3165C29D000DB343C /* GroupsViewController_iPhone.xib */; };
-		EB40F6D2165D2D7E00DB343C /* BadgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB40F6D1165D2D7E00DB343C /* BadgeViewController.m */; };
-		EB40F6D9165D54D200DB343C /* CardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB40F6D7165D54D200DB343C /* CardViewController.m */; };
-		EB40F6DA165D54D200DB343C /* CardViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB40F6D8165D54D200DB343C /* CardViewController_iPhone.xib */; };
-		EB491CD0165ED6FC004BC4E5 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB491CCE165ED6FB004BC4E5 /* LoginViewController.m */; };
-		EB491CD1165ED6FC004BC4E5 /* LoginViewController~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB491CCF165ED6FC004BC4E5 /* LoginViewController~iphone.xib */; };
 		EB61B34B16A9C807001BF77D /* PSTCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB61B33316A9C807001BF77D /* PSTCollectionView.m */; };
 		EB61B34C16A9C807001BF77D /* PSTCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB61B33516A9C807001BF77D /* PSTCollectionViewCell.m */; };
 		EB61B34D16A9C807001BF77D /* PSTCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB61B33816A9C807001BF77D /* PSTCollectionViewController.m */; };
@@ -70,25 +44,55 @@
 		EB61B35416A9C807001BF77D /* PSTGridLayoutItem.m in Sources */ = {isa = PBXBuildFile; fileRef = EB61B34616A9C807001BF77D /* PSTGridLayoutItem.m */; };
 		EB61B35516A9C807001BF77D /* PSTGridLayoutRow.m in Sources */ = {isa = PBXBuildFile; fileRef = EB61B34816A9C807001BF77D /* PSTGridLayoutRow.m */; };
 		EB61B35616A9C807001BF77D /* PSTGridLayoutSection.m in Sources */ = {isa = PBXBuildFile; fileRef = EB61B34A16A9C807001BF77D /* PSTGridLayoutSection.m */; };
-		EB61B36216A9D795001BF77D /* WrapperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB61B36016A9D795001BF77D /* WrapperViewController.m */; };
-		EB61B36316A9D795001BF77D /* WrapperViewController~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB61B36116A9D795001BF77D /* WrapperViewController~iphone.xib */; };
-		EB61B36616A9D7F0001BF77D /* WrapperViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB61B36516A9D7EF001BF77D /* WrapperViewController~ipad.xib */; };
-		EB6F379B165F0CBB00ADAFE7 /* LogoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6F379A165F0CBB00ADAFE7 /* LogoutViewController.m */; };
-		EB6F379F165FA36400ADAFE7 /* UILoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6F379E165FA36300ADAFE7 /* UILoadingView.m */; };
-		EB6F37A4165FAF3100ADAFE7 /* ProjectsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6F37A2165FAF3000ADAFE7 /* ProjectsTableViewController.m */; };
-		EB6F37A5165FAF3100ADAFE7 /* ProjectsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB6F37A3165FAF3100ADAFE7 /* ProjectsTableViewController.xib */; };
-		EB7FDF54165D78D900D7D481 /* APIController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB40F6C7165C39B400DB343C /* APIController.m */; };
-		EB7FDF55165D794700D7D481 /* ProjectsItemViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7FDF4F165D778200D7D481 /* ProjectsItemViewCell.m */; };
-		EB7FDF59165D7BBA00D7D481 /* PostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7FDF57165D7BBA00D7D481 /* PostViewController.m */; };
-		EB7FDF5A165D7BBA00D7D481 /* PostViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB7FDF58165D7BBA00D7D481 /* PostViewController_iPhone.xib */; };
+		EB7FFE1C1750951F0012042C /* InfoContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7FFE121750951F0012042C /* InfoContainerViewController.m */; };
+		EB7FFE1D1750951F0012042C /* UILoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7FFE141750951F0012042C /* UILoadingView.m */; };
+		EB7FFE1E1750951F0012042C /* UIScrollViewInfinitePagingController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7FFE161750951F0012042C /* UIScrollViewInfinitePagingController.m */; };
+		EB7FFE1F1750951F0012042C /* UIScrollViewInfinitePagingController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB7FFE171750951F0012042C /* UIScrollViewInfinitePagingController~ipad.xib */; };
+		EB7FFE201750951F0012042C /* UIScrollViewInfinitePagingController~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB7FFE181750951F0012042C /* UIScrollViewInfinitePagingController~iphone.xib */; };
+		EB7FFE211750951F0012042C /* UITableViewDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7FFE1B1750951F0012042C /* UITableViewDataController.m */; };
+		EB7FFE3A175097E70012042C /* APIController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7FFE29175097E70012042C /* APIController.m */; };
+		EB7FFE3B175097E70012042C /* WrapperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7FFE2A175097E70012042C /* WrapperViewController.m */; };
+		EB7FFE3C175097E70012042C /* PanelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7FFE2B175097E70012042C /* PanelViewController.m */; };
+		EB7FFE3D175097E70012042C /* ProjectsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7FFE2C175097E70012042C /* ProjectsTableViewController.m */; };
+		EB7FFE3E175097E70012042C /* PostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7FFE2D175097E70012042C /* PostViewController.m */; };
+		EB7FFE3F175097E70012042C /* ClientsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7FFE2E175097E70012042C /* ClientsViewController.m */; };
+		EB7FFE40175097E70012042C /* ConsultantsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7FFE2F175097E70012042C /* ConsultantsViewController.m */; };
+		EB7FFE41175097E70012042C /* GroupsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7FFE30175097E70012042C /* GroupsViewController.m */; };
+		EB7FFE42175097E70012042C /* ProjectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7FFE31175097E70012042C /* ProjectsViewController.m */; };
+		EB7FFE43175097E70012042C /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7FFE32175097E70012042C /* LoginViewController.m */; };
+		EB7FFE44175097E70012042C /* WrapperViewController~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB7FFE33175097E70012042C /* WrapperViewController~iphone.xib */; };
+		EB7FFE45175097E70012042C /* WrapperViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB7FFE34175097E70012042C /* WrapperViewController~ipad.xib */; };
+		EB7FFE46175097E70012042C /* MembersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7FFE37175097E70012042C /* MembersViewController.m */; };
+		EB7FFE47175097E70012042C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7FFE38175097E70012042C /* AppDelegate.m */; };
+		EB7FFE48175097E70012042C /* BadgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7FFE39175097E70012042C /* BadgeViewController.m */; };
+		EB7FFE5C175098090012042C /* BadgeViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB7FFE4A175098090012042C /* BadgeViewController_iPhone.xib */; };
+		EB7FFE5D175098090012042C /* UtilitiesController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7FFE4C175098090012042C /* UtilitiesController.m */; };
+		EB7FFE5E175098090012042C /* MembersViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB7FFE4D175098090012042C /* MembersViewController_iPhone.xib */; };
+		EB7FFE5F175098090012042C /* SlidingMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7FFE4F175098090012042C /* SlidingMenuViewController.m */; };
+		EB7FFE60175098090012042C /* PostViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB7FFE53175098090012042C /* PostViewController_iPhone.xib */; };
+		EB7FFE61175098090012042C /* PanelViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB7FFE54175098090012042C /* PanelViewController_iPhone.xib */; };
+		EB7FFE62175098090012042C /* LogoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7FFE55175098090012042C /* LogoutViewController.m */; };
+		EB7FFE63175098090012042C /* code.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7FFE57175098090012042C /* code.m */; };
+		EB7FFE64175098090012042C /* ProjectsViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB7FFE58175098090012042C /* ProjectsViewController_iPhone.xib */; };
+		EB7FFE65175098090012042C /* ProjectsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB7FFE5A175098090012042C /* ProjectsTableViewController.xib */; };
+		EB7FFE75175098140012042C /* ProjectsItemViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7FFE66175098140012042C /* ProjectsItemViewCell.m */; };
+		EB7FFE76175098140012042C /* CardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7FFE67175098140012042C /* CardViewController.m */; };
+		EB7FFE77175098140012042C /* GroupsViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB7FFE69175098140012042C /* GroupsViewController_iPhone.xib */; };
+		EB7FFE78175098140012042C /* ClientsViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB7FFE6A175098140012042C /* ClientsViewController_iPhone.xib */; };
+		EB7FFE79175098140012042C /* ConsultantsViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB7FFE6B175098140012042C /* ConsultantsViewController_iPhone.xib */; };
+		EB7FFE7A175098140012042C /* DatabaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7FFE6D175098140012042C /* DatabaseViewController.m */; };
+		EB7FFE7B175098140012042C /* PresencaViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB7FFE6E175098140012042C /* PresencaViewController_iPhone.xib */; };
+		EB7FFE7C175098140012042C /* CardViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB7FFE6F175098140012042C /* CardViewController_iPhone.xib */; };
+		EB7FFE7D175098140012042C /* ProjectsItemViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB7FFE70175098140012042C /* ProjectsItemViewCell.xib */; };
+		EB7FFE7E175098140012042C /* PresencaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7FFE71175098140012042C /* PresencaViewController.m */; };
+		EB7FFE7F175098140012042C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7FFE73175098140012042C /* main.m */; };
+		EB7FFE89175098270012042C /* LoginViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB7FFE81175098270012042C /* LoginViewController~ipad.xib */; };
+		EB7FFE8A175098270012042C /* LoginViewController~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB7FFE82175098270012042C /* LoginViewController~iphone.xib */; };
+		EB7FFE8B175098270012042C /* NegocioPresente-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB7FFE83175098270012042C /* NegocioPresente-Info.plist */; };
 		EBC24E8E165C94140082FF32 /* texturaCinza.png in Resources */ = {isa = PBXBuildFile; fileRef = EBC24E8A165C94140082FF32 /* texturaCinza.png */; };
 		EBC24E8F165C94140082FF32 /* texturaMadeira.png in Resources */ = {isa = PBXBuildFile; fileRef = EBC24E8B165C94140082FF32 /* texturaMadeira.png */; };
 		EBC24E90165C94140082FF32 /* texturaPapel.png in Resources */ = {isa = PBXBuildFile; fileRef = EBC24E8C165C94140082FF32 /* texturaPapel.png */; };
 		EBC24E91165C94140082FF32 /* texturaQuadro.png in Resources */ = {isa = PBXBuildFile; fileRef = EBC24E8D165C94140082FF32 /* texturaQuadro.png */; };
-		EBC24E9B165C95490082FF32 /* BadgeViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBC24E99165C95490082FF32 /* BadgeViewController_iPhone.xib */; };
-		EBFE2F5E1669C02F003BF8CA /* LoginViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBFE2F5D1669C02F003BF8CA /* LoginViewController~ipad.xib */; };
-		EBFE2F601669C694003BF8CA /* UIScrollViewInfinitePagingController~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBFE2F5F1669C694003BF8CA /* UIScrollViewInfinitePagingController~iphone.xib */; };
-		EBFE2F621669C9BE003BF8CA /* UIScrollViewInfinitePagingController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBFE2F611669C9BE003BF8CA /* UIScrollViewInfinitePagingController~ipad.xib */; };
 		EBFE2F661669DA93003BF8CA /* logoNP@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EBFE2F651669DA93003BF8CA /* logoNP@2x.png */; };
 		EBFE2F691669DB96003BF8CA /* logoNP@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EBFE2F671669DAAD003BF8CA /* logoNP@2x.png */; };
 /* End PBXBuildFile section */
@@ -96,19 +100,6 @@
 /* Begin PBXFileReference section */
 		EB0D1999165D9C40008E2FFB /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		EB0D199B165DABEE008E2FFB /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		EB0D199D165DAC45008E2FFB /* DatabaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseViewController.h; sourceTree = "<group>"; };
-		EB0D199E165DAC45008E2FFB /* DatabaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseViewController.m; sourceTree = "<group>"; };
-		EB0D19C1165DE47F008E2FFB /* UIScrollViewInfinitePagingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIScrollViewInfinitePagingController.h; path = NegocioPresente/UIScrollViewInfinitePagingController.h; sourceTree = "<group>"; };
-		EB0D19C2165DE47F008E2FFB /* UIScrollViewInfinitePagingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIScrollViewInfinitePagingController.m; path = NegocioPresente/UIScrollViewInfinitePagingController.m; sourceTree = "<group>"; };
-		EB0D19DA165E8684008E2FFB /* InfoContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InfoContainerViewController.h; path = NegocioPresente/InfoContainerViewController.h; sourceTree = "<group>"; };
-		EB0D19DB165E8685008E2FFB /* InfoContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InfoContainerViewController.m; path = NegocioPresente/InfoContainerViewController.m; sourceTree = "<group>"; };
-		EB0D19DD165E9AF5008E2FFB /* UtilitiesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilitiesController.h; sourceTree = "<group>"; };
-		EB0D19DE165E9AF6008E2FFB /* UtilitiesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilitiesController.m; sourceTree = "<group>"; };
-		EB0D19E0165E9F36008E2FFB /* UITableViewDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UITableViewDataController.h; path = NegocioPresente/UITableViewDataController.h; sourceTree = "<group>"; };
-		EB0D19E1165E9F36008E2FFB /* UITableViewDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UITableViewDataController.m; path = NegocioPresente/UITableViewDataController.m; sourceTree = "<group>"; };
-		EB0D19E3165EA299008E2FFB /* PanelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanelViewController.h; sourceTree = "<group>"; };
-		EB0D19E4165EA299008E2FFB /* PanelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PanelViewController.m; sourceTree = "<group>"; };
-		EB0D19E5165EA29A008E2FFB /* PanelViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PanelViewController_iPhone.xib; sourceTree = "<group>"; };
 		EB3938FB16654A4E00580A4E /* GTMNSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GTMNSString+HTML.h"; sourceTree = "<group>"; };
 		EB3938FC16654A4E00580A4E /* GTMNSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSString+HTML.m"; sourceTree = "<group>"; };
 		EB3938FD16654A4E00580A4E /* NSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HTML.h"; sourceTree = "<group>"; };
@@ -144,43 +135,11 @@
 		EB40F64D165C0BED00DB343C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EB40F64F165C0BED00DB343C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EB40F651165C0BED00DB343C /* NegocioPresente-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NegocioPresente-Prefix.pch"; sourceTree = "<group>"; };
-		EB40F652165C0BED00DB343C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		EB40F653165C0BED00DB343C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		EB40F655165C0BED00DB343C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		EB40F657165C0BED00DB343C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		EB40F65B165C0BED00DB343C /* SlidingMenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlidingMenuViewController.h; sourceTree = "<group>"; };
-		EB40F65C165C0BED00DB343C /* SlidingMenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlidingMenuViewController.m; sourceTree = "<group>"; };
 		EB40F696165C121900DB343C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		EB40F6A4165C139B00DB343C /* cellBg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cellBg@2x.png"; sourceTree = "<group>"; };
 		EB40F6A5165C139B00DB343C /* cellBgSelected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cellBgSelected@2x.png"; sourceTree = "<group>"; };
-		EB40F6A8165C149200DB343C /* MembersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MembersViewController.h; sourceTree = "<group>"; };
-		EB40F6A9165C149200DB343C /* MembersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MembersViewController.m; sourceTree = "<group>"; };
-		EB40F6AA165C149200DB343C /* MembersViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MembersViewController_iPhone.xib; sourceTree = "<group>"; };
-		EB40F6AD165C14CE00DB343C /* ProjectsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectsViewController.h; sourceTree = "<group>"; };
-		EB40F6AE165C14CF00DB343C /* ProjectsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectsViewController.m; sourceTree = "<group>"; };
-		EB40F6AF165C14CF00DB343C /* ProjectsViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProjectsViewController_iPhone.xib; sourceTree = "<group>"; };
-		EB40F6B2165C293F00DB343C /* ClientsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClientsViewController.h; sourceTree = "<group>"; };
-		EB40F6B3165C293F00DB343C /* ClientsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClientsViewController.m; sourceTree = "<group>"; };
-		EB40F6B4165C294000DB343C /* ClientsViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClientsViewController_iPhone.xib; sourceTree = "<group>"; };
-		EB40F6B7165C294900DB343C /* ConsultantsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConsultantsViewController.h; sourceTree = "<group>"; };
-		EB40F6B8165C294900DB343C /* ConsultantsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConsultantsViewController.m; sourceTree = "<group>"; };
-		EB40F6B9165C294A00DB343C /* ConsultantsViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConsultantsViewController_iPhone.xib; sourceTree = "<group>"; };
-		EB40F6BC165C298C00DB343C /* PresencaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresencaViewController.h; sourceTree = "<group>"; };
-		EB40F6BD165C298C00DB343C /* PresencaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresencaViewController.m; sourceTree = "<group>"; };
-		EB40F6BE165C298D00DB343C /* PresencaViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PresencaViewController_iPhone.xib; sourceTree = "<group>"; };
-		EB40F6C1165C29CF00DB343C /* GroupsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupsViewController.h; sourceTree = "<group>"; };
-		EB40F6C2165C29CF00DB343C /* GroupsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupsViewController.m; sourceTree = "<group>"; };
-		EB40F6C3165C29D000DB343C /* GroupsViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GroupsViewController_iPhone.xib; sourceTree = "<group>"; };
-		EB40F6C6165C39B300DB343C /* APIController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIController.h; sourceTree = "<group>"; };
-		EB40F6C7165C39B400DB343C /* APIController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APIController.m; sourceTree = "<group>"; };
-		EB40F6D0165D2D7E00DB343C /* BadgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BadgeViewController.h; sourceTree = "<group>"; };
-		EB40F6D1165D2D7E00DB343C /* BadgeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BadgeViewController.m; sourceTree = "<group>"; };
-		EB40F6D6165D54D200DB343C /* CardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardViewController.h; sourceTree = "<group>"; };
-		EB40F6D7165D54D200DB343C /* CardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardViewController.m; sourceTree = "<group>"; };
-		EB40F6D8165D54D200DB343C /* CardViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardViewController_iPhone.xib; sourceTree = "<group>"; };
-		EB491CCD165ED6FB004BC4E5 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
-		EB491CCE165ED6FB004BC4E5 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		EB491CCF165ED6FC004BC4E5 /* LoginViewController~iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "LoginViewController~iphone.xib"; sourceTree = "<group>"; };
 		EB61B33216A9C807001BF77D /* PSTCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSTCollectionView.h; sourceTree = "<group>"; };
 		EB61B33316A9C807001BF77D /* PSTCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSTCollectionView.m; sourceTree = "<group>"; };
 		EB61B33416A9C807001BF77D /* PSTCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSTCollectionViewCell.h; sourceTree = "<group>"; };
@@ -206,32 +165,81 @@
 		EB61B34816A9C807001BF77D /* PSTGridLayoutRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSTGridLayoutRow.m; sourceTree = "<group>"; };
 		EB61B34916A9C807001BF77D /* PSTGridLayoutSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSTGridLayoutSection.h; sourceTree = "<group>"; };
 		EB61B34A16A9C807001BF77D /* PSTGridLayoutSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSTGridLayoutSection.m; sourceTree = "<group>"; };
-		EB61B35F16A9D795001BF77D /* WrapperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WrapperViewController.h; sourceTree = "<group>"; };
-		EB61B36016A9D795001BF77D /* WrapperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WrapperViewController.m; sourceTree = "<group>"; };
-		EB61B36116A9D795001BF77D /* WrapperViewController~iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "WrapperViewController~iphone.xib"; sourceTree = "<group>"; };
-		EB61B36516A9D7EF001BF77D /* WrapperViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "WrapperViewController~ipad.xib"; sourceTree = "<group>"; };
-		EB6F3799165F0CBB00ADAFE7 /* LogoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogoutViewController.h; sourceTree = "<group>"; };
-		EB6F379A165F0CBB00ADAFE7 /* LogoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogoutViewController.m; sourceTree = "<group>"; };
-		EB6F379D165FA36300ADAFE7 /* UILoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UILoadingView.h; path = NegocioPresente/UILoadingView.h; sourceTree = "<group>"; };
-		EB6F379E165FA36300ADAFE7 /* UILoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UILoadingView.m; path = NegocioPresente/UILoadingView.m; sourceTree = "<group>"; };
-		EB6F37A0165FA92400ADAFE7 /* UITableViewDataCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UITableViewDataCell.h; path = NegocioPresente/UITableViewDataCell.h; sourceTree = "<group>"; };
-		EB6F37A1165FAF3000ADAFE7 /* ProjectsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectsTableViewController.h; sourceTree = "<group>"; };
-		EB6F37A2165FAF3000ADAFE7 /* ProjectsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectsTableViewController.m; sourceTree = "<group>"; };
-		EB6F37A3165FAF3100ADAFE7 /* ProjectsTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProjectsTableViewController.xib; sourceTree = "<group>"; };
-		EB7FDF4E165D778200D7D481 /* ProjectsItemViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProjectsItemViewCell.h; sourceTree = "<group>"; };
-		EB7FDF4F165D778200D7D481 /* ProjectsItemViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProjectsItemViewCell.m; sourceTree = "<group>"; };
-		EB7FDF50165D778200D7D481 /* ProjectsItemViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProjectsItemViewCell.xib; sourceTree = "<group>"; };
-		EB7FDF56165D7BBA00D7D481 /* PostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostViewController.h; sourceTree = "<group>"; };
-		EB7FDF57165D7BBA00D7D481 /* PostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostViewController.m; sourceTree = "<group>"; };
-		EB7FDF58165D7BBA00D7D481 /* PostViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostViewController_iPhone.xib; sourceTree = "<group>"; };
+		EB7FFE111750951F0012042C /* InfoContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InfoContainerViewController.h; path = Classes/InfoContainerViewController.h; sourceTree = "<group>"; };
+		EB7FFE121750951F0012042C /* InfoContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InfoContainerViewController.m; path = Classes/InfoContainerViewController.m; sourceTree = "<group>"; };
+		EB7FFE131750951F0012042C /* UILoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UILoadingView.h; path = Classes/UILoadingView.h; sourceTree = "<group>"; };
+		EB7FFE141750951F0012042C /* UILoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UILoadingView.m; path = Classes/UILoadingView.m; sourceTree = "<group>"; };
+		EB7FFE151750951F0012042C /* UIScrollViewInfinitePagingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIScrollViewInfinitePagingController.h; path = Classes/UIScrollViewInfinitePagingController.h; sourceTree = "<group>"; };
+		EB7FFE161750951F0012042C /* UIScrollViewInfinitePagingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIScrollViewInfinitePagingController.m; path = Classes/UIScrollViewInfinitePagingController.m; sourceTree = "<group>"; };
+		EB7FFE171750951F0012042C /* UIScrollViewInfinitePagingController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "UIScrollViewInfinitePagingController~ipad.xib"; path = "Classes/UIScrollViewInfinitePagingController~ipad.xib"; sourceTree = "<group>"; };
+		EB7FFE181750951F0012042C /* UIScrollViewInfinitePagingController~iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "UIScrollViewInfinitePagingController~iphone.xib"; path = "Classes/UIScrollViewInfinitePagingController~iphone.xib"; sourceTree = "<group>"; };
+		EB7FFE191750951F0012042C /* UITableViewDataCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UITableViewDataCell.h; path = Classes/UITableViewDataCell.h; sourceTree = "<group>"; };
+		EB7FFE1A1750951F0012042C /* UITableViewDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UITableViewDataController.h; path = Classes/UITableViewDataController.h; sourceTree = "<group>"; };
+		EB7FFE1B1750951F0012042C /* UITableViewDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UITableViewDataController.m; path = Classes/UITableViewDataController.m; sourceTree = "<group>"; };
+		EB7FFE29175097E70012042C /* APIController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = APIController.m; path = Classes/APIController.m; sourceTree = SOURCE_ROOT; };
+		EB7FFE2A175097E70012042C /* WrapperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WrapperViewController.m; path = Classes/WrapperViewController.m; sourceTree = SOURCE_ROOT; };
+		EB7FFE2B175097E70012042C /* PanelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PanelViewController.m; path = Classes/PanelViewController.m; sourceTree = SOURCE_ROOT; };
+		EB7FFE2C175097E70012042C /* ProjectsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProjectsTableViewController.m; path = Classes/ProjectsTableViewController.m; sourceTree = SOURCE_ROOT; };
+		EB7FFE2D175097E70012042C /* PostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PostViewController.m; path = Classes/PostViewController.m; sourceTree = SOURCE_ROOT; };
+		EB7FFE2E175097E70012042C /* ClientsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ClientsViewController.m; path = Classes/ClientsViewController.m; sourceTree = SOURCE_ROOT; };
+		EB7FFE2F175097E70012042C /* ConsultantsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ConsultantsViewController.m; path = Classes/ConsultantsViewController.m; sourceTree = SOURCE_ROOT; };
+		EB7FFE30175097E70012042C /* GroupsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GroupsViewController.m; path = Classes/GroupsViewController.m; sourceTree = SOURCE_ROOT; };
+		EB7FFE31175097E70012042C /* ProjectsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProjectsViewController.m; path = Classes/ProjectsViewController.m; sourceTree = SOURCE_ROOT; };
+		EB7FFE32175097E70012042C /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = Classes/LoginViewController.m; sourceTree = SOURCE_ROOT; };
+		EB7FFE33175097E70012042C /* WrapperViewController~iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "WrapperViewController~iphone.xib"; path = "Classes/WrapperViewController~iphone.xib"; sourceTree = SOURCE_ROOT; };
+		EB7FFE34175097E70012042C /* WrapperViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "WrapperViewController~ipad.xib"; path = "Classes/WrapperViewController~ipad.xib"; sourceTree = SOURCE_ROOT; };
+		EB7FFE35175097E70012042C /* WrapperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WrapperViewController.h; path = Classes/WrapperViewController.h; sourceTree = SOURCE_ROOT; };
+		EB7FFE36175097E70012042C /* APIController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APIController.h; path = Classes/APIController.h; sourceTree = SOURCE_ROOT; };
+		EB7FFE37175097E70012042C /* MembersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MembersViewController.m; path = Classes/MembersViewController.m; sourceTree = SOURCE_ROOT; };
+		EB7FFE38175097E70012042C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Classes/AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		EB7FFE39175097E70012042C /* BadgeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BadgeViewController.m; path = Classes/BadgeViewController.m; sourceTree = SOURCE_ROOT; };
+		EB7FFE49175098090012042C /* PanelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PanelViewController.h; path = Classes/PanelViewController.h; sourceTree = SOURCE_ROOT; };
+		EB7FFE4A175098090012042C /* BadgeViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BadgeViewController_iPhone.xib; path = Classes/BadgeViewController_iPhone.xib; sourceTree = SOURCE_ROOT; };
+		EB7FFE4B175098090012042C /* UtilitiesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UtilitiesController.h; path = Classes/UtilitiesController.h; sourceTree = SOURCE_ROOT; };
+		EB7FFE4C175098090012042C /* UtilitiesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UtilitiesController.m; path = Classes/UtilitiesController.m; sourceTree = SOURCE_ROOT; };
+		EB7FFE4D175098090012042C /* MembersViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MembersViewController_iPhone.xib; path = Classes/MembersViewController_iPhone.xib; sourceTree = SOURCE_ROOT; };
+		EB7FFE4E175098090012042C /* BadgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BadgeViewController.h; path = Classes/BadgeViewController.h; sourceTree = SOURCE_ROOT; };
+		EB7FFE4F175098090012042C /* SlidingMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SlidingMenuViewController.m; path = Classes/SlidingMenuViewController.m; sourceTree = SOURCE_ROOT; };
+		EB7FFE50175098090012042C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		EB7FFE51175098090012042C /* SlidingMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SlidingMenuViewController.h; path = Classes/SlidingMenuViewController.h; sourceTree = SOURCE_ROOT; };
+		EB7FFE52175098090012042C /* PostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PostViewController.h; path = Classes/PostViewController.h; sourceTree = SOURCE_ROOT; };
+		EB7FFE53175098090012042C /* PostViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PostViewController_iPhone.xib; path = Classes/PostViewController_iPhone.xib; sourceTree = SOURCE_ROOT; };
+		EB7FFE54175098090012042C /* PanelViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PanelViewController_iPhone.xib; path = Classes/PanelViewController_iPhone.xib; sourceTree = SOURCE_ROOT; };
+		EB7FFE55175098090012042C /* LogoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LogoutViewController.m; path = Classes/LogoutViewController.m; sourceTree = SOURCE_ROOT; };
+		EB7FFE56175098090012042C /* LogoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LogoutViewController.h; path = Classes/LogoutViewController.h; sourceTree = SOURCE_ROOT; };
+		EB7FFE57175098090012042C /* code.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = code.m; path = Classes/code.m; sourceTree = SOURCE_ROOT; };
+		EB7FFE58175098090012042C /* ProjectsViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProjectsViewController_iPhone.xib; path = Classes/ProjectsViewController_iPhone.xib; sourceTree = SOURCE_ROOT; };
+		EB7FFE59175098090012042C /* ProjectsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProjectsViewController.h; path = Classes/ProjectsViewController.h; sourceTree = SOURCE_ROOT; };
+		EB7FFE5A175098090012042C /* ProjectsTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProjectsTableViewController.xib; path = Classes/ProjectsTableViewController.xib; sourceTree = SOURCE_ROOT; };
+		EB7FFE5B175098090012042C /* ProjectsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProjectsTableViewController.h; path = Classes/ProjectsTableViewController.h; sourceTree = SOURCE_ROOT; };
+		EB7FFE66175098140012042C /* ProjectsItemViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProjectsItemViewCell.m; path = Classes/ProjectsItemViewCell.m; sourceTree = SOURCE_ROOT; };
+		EB7FFE67175098140012042C /* CardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardViewController.m; path = Classes/CardViewController.m; sourceTree = SOURCE_ROOT; };
+		EB7FFE68175098140012042C /* CardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardViewController.h; path = Classes/CardViewController.h; sourceTree = SOURCE_ROOT; };
+		EB7FFE69175098140012042C /* GroupsViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GroupsViewController_iPhone.xib; path = Classes/GroupsViewController_iPhone.xib; sourceTree = SOURCE_ROOT; };
+		EB7FFE6A175098140012042C /* ClientsViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ClientsViewController_iPhone.xib; path = Classes/ClientsViewController_iPhone.xib; sourceTree = SOURCE_ROOT; };
+		EB7FFE6B175098140012042C /* ConsultantsViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ConsultantsViewController_iPhone.xib; path = Classes/ConsultantsViewController_iPhone.xib; sourceTree = SOURCE_ROOT; };
+		EB7FFE6C175098140012042C /* DatabaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DatabaseViewController.h; path = Classes/DatabaseViewController.h; sourceTree = SOURCE_ROOT; };
+		EB7FFE6D175098140012042C /* DatabaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DatabaseViewController.m; path = Classes/DatabaseViewController.m; sourceTree = SOURCE_ROOT; };
+		EB7FFE6E175098140012042C /* PresencaViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PresencaViewController_iPhone.xib; path = Classes/PresencaViewController_iPhone.xib; sourceTree = SOURCE_ROOT; };
+		EB7FFE6F175098140012042C /* CardViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CardViewController_iPhone.xib; path = Classes/CardViewController_iPhone.xib; sourceTree = SOURCE_ROOT; };
+		EB7FFE70175098140012042C /* ProjectsItemViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProjectsItemViewCell.xib; path = Classes/ProjectsItemViewCell.xib; sourceTree = SOURCE_ROOT; };
+		EB7FFE71175098140012042C /* PresencaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PresencaViewController.m; path = Classes/PresencaViewController.m; sourceTree = SOURCE_ROOT; };
+		EB7FFE72175098140012042C /* PresencaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PresencaViewController.h; path = Classes/PresencaViewController.h; sourceTree = SOURCE_ROOT; };
+		EB7FFE73175098140012042C /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Classes/main.m; sourceTree = SOURCE_ROOT; };
+		EB7FFE74175098140012042C /* NegocioPresente-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NegocioPresente-Prefix.pch"; path = "Classes/NegocioPresente-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		EB7FFE80175098270012042C /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = Classes/LoginViewController.h; sourceTree = SOURCE_ROOT; };
+		EB7FFE81175098270012042C /* LoginViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "LoginViewController~ipad.xib"; path = "Classes/LoginViewController~ipad.xib"; sourceTree = SOURCE_ROOT; };
+		EB7FFE82175098270012042C /* LoginViewController~iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "LoginViewController~iphone.xib"; path = "Classes/LoginViewController~iphone.xib"; sourceTree = SOURCE_ROOT; };
+		EB7FFE83175098270012042C /* NegocioPresente-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "NegocioPresente-Info.plist"; path = "Classes/NegocioPresente-Info.plist"; sourceTree = SOURCE_ROOT; };
+		EB7FFE84175098270012042C /* ProjectsItemViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProjectsItemViewCell.h; path = Classes/ProjectsItemViewCell.h; sourceTree = SOURCE_ROOT; };
+		EB7FFE85175098270012042C /* GroupsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GroupsViewController.h; path = Classes/GroupsViewController.h; sourceTree = SOURCE_ROOT; };
+		EB7FFE86175098270012042C /* MembersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MembersViewController.h; path = Classes/MembersViewController.h; sourceTree = SOURCE_ROOT; };
+		EB7FFE87175098270012042C /* ConsultantsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConsultantsViewController.h; path = Classes/ConsultantsViewController.h; sourceTree = SOURCE_ROOT; };
+		EB7FFE88175098270012042C /* ClientsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClientsViewController.h; path = Classes/ClientsViewController.h; sourceTree = SOURCE_ROOT; };
 		EBC24E8A165C94140082FF32 /* texturaCinza.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texturaCinza.png; sourceTree = "<group>"; };
 		EBC24E8B165C94140082FF32 /* texturaMadeira.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texturaMadeira.png; sourceTree = "<group>"; };
 		EBC24E8C165C94140082FF32 /* texturaPapel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texturaPapel.png; sourceTree = "<group>"; };
 		EBC24E8D165C94140082FF32 /* texturaQuadro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texturaQuadro.png; sourceTree = "<group>"; };
-		EBC24E99165C95490082FF32 /* BadgeViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BadgeViewController_iPhone.xib; sourceTree = "<group>"; };
-		EBFE2F5D1669C02F003BF8CA /* LoginViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "LoginViewController~ipad.xib"; sourceTree = "<group>"; };
-		EBFE2F5F1669C694003BF8CA /* UIScrollViewInfinitePagingController~iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "UIScrollViewInfinitePagingController~iphone.xib"; path = "NegocioPresente/UIScrollViewInfinitePagingController~iphone.xib"; sourceTree = "<group>"; };
-		EBFE2F611669C9BE003BF8CA /* UIScrollViewInfinitePagingController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "UIScrollViewInfinitePagingController~ipad.xib"; path = "NegocioPresente/UIScrollViewInfinitePagingController~ipad.xib"; sourceTree = "<group>"; };
 		EBFE2F651669DA93003BF8CA /* logoNP@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logoNP@2x.png"; sourceTree = "<group>"; };
 		EBFE2F671669DAAD003BF8CA /* logoNP@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logoNP@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -255,17 +263,17 @@
 		EB0D19C4165DEAD3008E2FFB /* UICustomViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				EB6F379D165FA36300ADAFE7 /* UILoadingView.h */,
-				EB6F379E165FA36300ADAFE7 /* UILoadingView.m */,
-				EB0D19C1165DE47F008E2FFB /* UIScrollViewInfinitePagingController.h */,
-				EB0D19C2165DE47F008E2FFB /* UIScrollViewInfinitePagingController.m */,
-				EBFE2F5F1669C694003BF8CA /* UIScrollViewInfinitePagingController~iphone.xib */,
-				EBFE2F611669C9BE003BF8CA /* UIScrollViewInfinitePagingController~ipad.xib */,
-				EB6F37A0165FA92400ADAFE7 /* UITableViewDataCell.h */,
-				EB0D19E0165E9F36008E2FFB /* UITableViewDataController.h */,
-				EB0D19E1165E9F36008E2FFB /* UITableViewDataController.m */,
-				EB0D19DA165E8684008E2FFB /* InfoContainerViewController.h */,
-				EB0D19DB165E8685008E2FFB /* InfoContainerViewController.m */,
+				EB7FFE111750951F0012042C /* InfoContainerViewController.h */,
+				EB7FFE121750951F0012042C /* InfoContainerViewController.m */,
+				EB7FFE131750951F0012042C /* UILoadingView.h */,
+				EB7FFE141750951F0012042C /* UILoadingView.m */,
+				EB7FFE151750951F0012042C /* UIScrollViewInfinitePagingController.h */,
+				EB7FFE161750951F0012042C /* UIScrollViewInfinitePagingController.m */,
+				EB7FFE171750951F0012042C /* UIScrollViewInfinitePagingController~ipad.xib */,
+				EB7FFE181750951F0012042C /* UIScrollViewInfinitePagingController~iphone.xib */,
+				EB7FFE191750951F0012042C /* UITableViewDataCell.h */,
+				EB7FFE1A1750951F0012042C /* UITableViewDataController.h */,
+				EB7FFE1B1750951F0012042C /* UITableViewDataController.m */,
 			);
 			name = UICustomViewControllers;
 			sourceTree = "<group>";
@@ -358,62 +366,66 @@
 		EB40F649165C0BED00DB343C /* NegocioPresente */ = {
 			isa = PBXGroup;
 			children = (
-				EB61B35F16A9D795001BF77D /* WrapperViewController.h */,
-				EB61B36016A9D795001BF77D /* WrapperViewController.m */,
-				EB61B36116A9D795001BF77D /* WrapperViewController~iphone.xib */,
-				EB61B36516A9D7EF001BF77D /* WrapperViewController~ipad.xib */,
-				EB40F6C6165C39B300DB343C /* APIController.h */,
-				EB40F6C7165C39B400DB343C /* APIController.m */,
-				EB40F652165C0BED00DB343C /* AppDelegate.h */,
-				EB40F653165C0BED00DB343C /* AppDelegate.m */,
-				EB40F6D0165D2D7E00DB343C /* BadgeViewController.h */,
-				EB40F6D1165D2D7E00DB343C /* BadgeViewController.m */,
-				EBC24E99165C95490082FF32 /* BadgeViewController_iPhone.xib */,
-				EB40F6D6165D54D200DB343C /* CardViewController.h */,
-				EB40F6D7165D54D200DB343C /* CardViewController.m */,
-				EB40F6D8165D54D200DB343C /* CardViewController_iPhone.xib */,
-				EB40F6B2165C293F00DB343C /* ClientsViewController.h */,
-				EB40F6B3165C293F00DB343C /* ClientsViewController.m */,
-				EB40F6B4165C294000DB343C /* ClientsViewController_iPhone.xib */,
-				EB40F6B7165C294900DB343C /* ConsultantsViewController.h */,
-				EB40F6B8165C294900DB343C /* ConsultantsViewController.m */,
-				EB40F6B9165C294A00DB343C /* ConsultantsViewController_iPhone.xib */,
-				EB0D199D165DAC45008E2FFB /* DatabaseViewController.h */,
-				EB0D199E165DAC45008E2FFB /* DatabaseViewController.m */,
-				EB40F6C1165C29CF00DB343C /* GroupsViewController.h */,
-				EB40F6C2165C29CF00DB343C /* GroupsViewController.m */,
-				EB40F6C3165C29D000DB343C /* GroupsViewController_iPhone.xib */,
-				EB491CCD165ED6FB004BC4E5 /* LoginViewController.h */,
-				EB491CCE165ED6FB004BC4E5 /* LoginViewController.m */,
-				EB491CCF165ED6FC004BC4E5 /* LoginViewController~iphone.xib */,
-				EBFE2F5D1669C02F003BF8CA /* LoginViewController~ipad.xib */,
-				EB6F3799165F0CBB00ADAFE7 /* LogoutViewController.h */,
-				EB6F379A165F0CBB00ADAFE7 /* LogoutViewController.m */,
-				EB40F6A8165C149200DB343C /* MembersViewController.h */,
-				EB40F6A9165C149200DB343C /* MembersViewController.m */,
-				EB40F6AA165C149200DB343C /* MembersViewController_iPhone.xib */,
-				EB40F65B165C0BED00DB343C /* SlidingMenuViewController.h */,
-				EB40F65C165C0BED00DB343C /* SlidingMenuViewController.m */,
-				EB0D19E3165EA299008E2FFB /* PanelViewController.h */,
-				EB0D19E4165EA299008E2FFB /* PanelViewController.m */,
-				EB0D19E5165EA29A008E2FFB /* PanelViewController_iPhone.xib */,
-				EB7FDF56165D7BBA00D7D481 /* PostViewController.h */,
-				EB7FDF57165D7BBA00D7D481 /* PostViewController.m */,
-				EB7FDF58165D7BBA00D7D481 /* PostViewController_iPhone.xib */,
-				EB40F6BC165C298C00DB343C /* PresencaViewController.h */,
-				EB40F6BD165C298C00DB343C /* PresencaViewController.m */,
-				EB0D19DD165E9AF5008E2FFB /* UtilitiesController.h */,
-				EB0D19DE165E9AF6008E2FFB /* UtilitiesController.m */,
-				EB40F6BE165C298D00DB343C /* PresencaViewController_iPhone.xib */,
-				EB40F6AD165C14CE00DB343C /* ProjectsViewController.h */,
-				EB40F6AE165C14CF00DB343C /* ProjectsViewController.m */,
-				EB40F6AF165C14CF00DB343C /* ProjectsViewController_iPhone.xib */,
-				EB6F37A1165FAF3000ADAFE7 /* ProjectsTableViewController.h */,
-				EB6F37A2165FAF3000ADAFE7 /* ProjectsTableViewController.m */,
-				EB6F37A3165FAF3100ADAFE7 /* ProjectsTableViewController.xib */,
-				EB7FDF4E165D778200D7D481 /* ProjectsItemViewCell.h */,
-				EB7FDF4F165D778200D7D481 /* ProjectsItemViewCell.m */,
-				EB7FDF50165D778200D7D481 /* ProjectsItemViewCell.xib */,
+				EB7FFE29175097E70012042C /* APIController.m */,
+				EB7FFE2A175097E70012042C /* WrapperViewController.m */,
+				EB7FFE2B175097E70012042C /* PanelViewController.m */,
+				EB7FFE2C175097E70012042C /* ProjectsTableViewController.m */,
+				EB7FFE2D175097E70012042C /* PostViewController.m */,
+				EB7FFE88175098270012042C /* ClientsViewController.h */,
+				EB7FFE2E175097E70012042C /* ClientsViewController.m */,
+				EB7FFE2F175097E70012042C /* ConsultantsViewController.m */,
+				EB7FFE30175097E70012042C /* GroupsViewController.m */,
+				EB7FFE66175098140012042C /* ProjectsItemViewCell.m */,
+				EB7FFE68175098140012042C /* CardViewController.h */,
+				EB7FFE67175098140012042C /* CardViewController.m */,
+				EB7FFE69175098140012042C /* GroupsViewController_iPhone.xib */,
+				EB7FFE6A175098140012042C /* ClientsViewController_iPhone.xib */,
+				EB7FFE80175098270012042C /* LoginViewController.h */,
+				EB7FFE81175098270012042C /* LoginViewController~ipad.xib */,
+				EB7FFE82175098270012042C /* LoginViewController~iphone.xib */,
+				EB7FFE83175098270012042C /* NegocioPresente-Info.plist */,
+				EB7FFE84175098270012042C /* ProjectsItemViewCell.h */,
+				EB7FFE85175098270012042C /* GroupsViewController.h */,
+				EB7FFE86175098270012042C /* MembersViewController.h */,
+				EB7FFE87175098270012042C /* ConsultantsViewController.h */,
+				EB7FFE6B175098140012042C /* ConsultantsViewController_iPhone.xib */,
+				EB7FFE6C175098140012042C /* DatabaseViewController.h */,
+				EB7FFE6D175098140012042C /* DatabaseViewController.m */,
+				EB7FFE6E175098140012042C /* PresencaViewController_iPhone.xib */,
+				EB7FFE6F175098140012042C /* CardViewController_iPhone.xib */,
+				EB7FFE70175098140012042C /* ProjectsItemViewCell.xib */,
+				EB7FFE71175098140012042C /* PresencaViewController.m */,
+				EB7FFE72175098140012042C /* PresencaViewController.h */,
+				EB7FFE73175098140012042C /* main.m */,
+				EB7FFE74175098140012042C /* NegocioPresente-Prefix.pch */,
+				EB7FFE31175097E70012042C /* ProjectsViewController.m */,
+				EB7FFE32175097E70012042C /* LoginViewController.m */,
+				EB7FFE33175097E70012042C /* WrapperViewController~iphone.xib */,
+				EB7FFE34175097E70012042C /* WrapperViewController~ipad.xib */,
+				EB7FFE49175098090012042C /* PanelViewController.h */,
+				EB7FFE4A175098090012042C /* BadgeViewController_iPhone.xib */,
+				EB7FFE4B175098090012042C /* UtilitiesController.h */,
+				EB7FFE4C175098090012042C /* UtilitiesController.m */,
+				EB7FFE4D175098090012042C /* MembersViewController_iPhone.xib */,
+				EB7FFE4E175098090012042C /* BadgeViewController.h */,
+				EB7FFE4F175098090012042C /* SlidingMenuViewController.m */,
+				EB7FFE50175098090012042C /* AppDelegate.h */,
+				EB7FFE51175098090012042C /* SlidingMenuViewController.h */,
+				EB7FFE52175098090012042C /* PostViewController.h */,
+				EB7FFE53175098090012042C /* PostViewController_iPhone.xib */,
+				EB7FFE54175098090012042C /* PanelViewController_iPhone.xib */,
+				EB7FFE55175098090012042C /* LogoutViewController.m */,
+				EB7FFE56175098090012042C /* LogoutViewController.h */,
+				EB7FFE57175098090012042C /* code.m */,
+				EB7FFE58175098090012042C /* ProjectsViewController_iPhone.xib */,
+				EB7FFE59175098090012042C /* ProjectsViewController.h */,
+				EB7FFE5A175098090012042C /* ProjectsTableViewController.xib */,
+				EB7FFE5B175098090012042C /* ProjectsTableViewController.h */,
+				EB7FFE35175097E70012042C /* WrapperViewController.h */,
+				EB7FFE36175097E70012042C /* APIController.h */,
+				EB7FFE37175097E70012042C /* MembersViewController.m */,
+				EB7FFE38175097E70012042C /* AppDelegate.m */,
+				EB7FFE39175097E70012042C /* BadgeViewController.m */,
 				EB40F64A165C0BED00DB343C /* Supporting Files */,
 			);
 			path = NegocioPresente;
@@ -529,31 +541,33 @@
 				EB40F658165C0BED00DB343C /* Default@2x.png in Resources */,
 				EB40F6A6165C139B00DB343C /* cellBg@2x.png in Resources */,
 				EB40F6A7165C139B00DB343C /* cellBgSelected@2x.png in Resources */,
-				EB40F6AC165C149200DB343C /* MembersViewController_iPhone.xib in Resources */,
-				EB40F6B1165C14CF00DB343C /* ProjectsViewController_iPhone.xib in Resources */,
-				EB40F6B6165C294000DB343C /* ClientsViewController_iPhone.xib in Resources */,
-				EB40F6BB165C294A00DB343C /* ConsultantsViewController_iPhone.xib in Resources */,
-				EB40F6C0165C298D00DB343C /* PresencaViewController_iPhone.xib in Resources */,
-				EB40F6C5165C29D000DB343C /* GroupsViewController_iPhone.xib in Resources */,
 				EBC24E8E165C94140082FF32 /* texturaCinza.png in Resources */,
 				EBC24E8F165C94140082FF32 /* texturaMadeira.png in Resources */,
 				EBC24E90165C94140082FF32 /* texturaPapel.png in Resources */,
 				EBC24E91165C94140082FF32 /* texturaQuadro.png in Resources */,
-				EBC24E9B165C95490082FF32 /* BadgeViewController_iPhone.xib in Resources */,
-				EB40F6DA165D54D200DB343C /* CardViewController_iPhone.xib in Resources */,
-				EB7FDF5A165D7BBA00D7D481 /* PostViewController_iPhone.xib in Resources */,
 				EB0D199A165D9C40008E2FFB /* Default-568h@2x.png in Resources */,
-				EB0D19E7165EA29C008E2FFB /* PanelViewController_iPhone.xib in Resources */,
-				EB491CD1165ED6FC004BC4E5 /* LoginViewController~iphone.xib in Resources */,
-				EB6F37A5165FAF3100ADAFE7 /* ProjectsTableViewController.xib in Resources */,
 				EB39391E16654A4E00580A4E /* PaperFoldResources.bundle in Resources */,
-				EBFE2F5E1669C02F003BF8CA /* LoginViewController~ipad.xib in Resources */,
-				EBFE2F601669C694003BF8CA /* UIScrollViewInfinitePagingController~iphone.xib in Resources */,
-				EBFE2F621669C9BE003BF8CA /* UIScrollViewInfinitePagingController~ipad.xib in Resources */,
 				EBFE2F661669DA93003BF8CA /* logoNP@2x.png in Resources */,
 				EBFE2F691669DB96003BF8CA /* logoNP@2x.png in Resources */,
-				EB61B36316A9D795001BF77D /* WrapperViewController~iphone.xib in Resources */,
-				EB61B36616A9D7F0001BF77D /* WrapperViewController~ipad.xib in Resources */,
+				EB7FFE1F1750951F0012042C /* UIScrollViewInfinitePagingController~ipad.xib in Resources */,
+				EB7FFE201750951F0012042C /* UIScrollViewInfinitePagingController~iphone.xib in Resources */,
+				EB7FFE44175097E70012042C /* WrapperViewController~iphone.xib in Resources */,
+				EB7FFE45175097E70012042C /* WrapperViewController~ipad.xib in Resources */,
+				EB7FFE5C175098090012042C /* BadgeViewController_iPhone.xib in Resources */,
+				EB7FFE5E175098090012042C /* MembersViewController_iPhone.xib in Resources */,
+				EB7FFE60175098090012042C /* PostViewController_iPhone.xib in Resources */,
+				EB7FFE61175098090012042C /* PanelViewController_iPhone.xib in Resources */,
+				EB7FFE64175098090012042C /* ProjectsViewController_iPhone.xib in Resources */,
+				EB7FFE65175098090012042C /* ProjectsTableViewController.xib in Resources */,
+				EB7FFE77175098140012042C /* GroupsViewController_iPhone.xib in Resources */,
+				EB7FFE78175098140012042C /* ClientsViewController_iPhone.xib in Resources */,
+				EB7FFE79175098140012042C /* ConsultantsViewController_iPhone.xib in Resources */,
+				EB7FFE7B175098140012042C /* PresencaViewController_iPhone.xib in Resources */,
+				EB7FFE7C175098140012042C /* CardViewController_iPhone.xib in Resources */,
+				EB7FFE7D175098140012042C /* ProjectsItemViewCell.xib in Resources */,
+				EB7FFE89175098270012042C /* LoginViewController~ipad.xib in Resources */,
+				EB7FFE8A175098270012042C /* LoginViewController~iphone.xib in Resources */,
+				EB7FFE8B175098270012042C /* NegocioPresente-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -564,30 +578,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB7FDF55165D794700D7D481 /* ProjectsItemViewCell.m in Sources */,
-				EB7FDF54165D78D900D7D481 /* APIController.m in Sources */,
 				EB40F650165C0BED00DB343C /* main.m in Sources */,
-				EB40F654165C0BED00DB343C /* AppDelegate.m in Sources */,
-				EB40F65D165C0BED00DB343C /* SlidingMenuViewController.m in Sources */,
-				EB40F6AB165C149200DB343C /* MembersViewController.m in Sources */,
-				EB40F6B0165C14CF00DB343C /* ProjectsViewController.m in Sources */,
-				EB40F6B5165C294000DB343C /* ClientsViewController.m in Sources */,
-				EB40F6BA165C294A00DB343C /* ConsultantsViewController.m in Sources */,
-				EB40F6BF165C298D00DB343C /* PresencaViewController.m in Sources */,
-				EB40F6C4165C29D000DB343C /* GroupsViewController.m in Sources */,
-				EB40F6D2165D2D7E00DB343C /* BadgeViewController.m in Sources */,
-				EB40F6D9165D54D200DB343C /* CardViewController.m in Sources */,
-				EB7FDF59165D7BBA00D7D481 /* PostViewController.m in Sources */,
-				EB0D199F165DAC45008E2FFB /* DatabaseViewController.m in Sources */,
-				EB0D19C3165DE47F008E2FFB /* UIScrollViewInfinitePagingController.m in Sources */,
-				EB0D19DC165E8686008E2FFB /* InfoContainerViewController.m in Sources */,
-				EB0D19DF165E9AF7008E2FFB /* UtilitiesController.m in Sources */,
-				EB0D19E2165E9F36008E2FFB /* UITableViewDataController.m in Sources */,
-				EB0D19E6165EA29C008E2FFB /* PanelViewController.m in Sources */,
-				EB491CD0165ED6FC004BC4E5 /* LoginViewController.m in Sources */,
-				EB6F379B165F0CBB00ADAFE7 /* LogoutViewController.m in Sources */,
-				EB6F379F165FA36400ADAFE7 /* UILoadingView.m in Sources */,
-				EB6F37A4165FAF3100ADAFE7 /* ProjectsTableViewController.m in Sources */,
 				EB39391816654A4E00580A4E /* GTMNSString+HTML.m in Sources */,
 				EB39391916654A4E00580A4E /* NSString+HTML.m in Sources */,
 				EB39391A16654A4E00580A4E /* FacingView.m in Sources */,
@@ -612,7 +603,32 @@
 				EB61B35416A9C807001BF77D /* PSTGridLayoutItem.m in Sources */,
 				EB61B35516A9C807001BF77D /* PSTGridLayoutRow.m in Sources */,
 				EB61B35616A9C807001BF77D /* PSTGridLayoutSection.m in Sources */,
-				EB61B36216A9D795001BF77D /* WrapperViewController.m in Sources */,
+				EB7FFE1C1750951F0012042C /* InfoContainerViewController.m in Sources */,
+				EB7FFE1D1750951F0012042C /* UILoadingView.m in Sources */,
+				EB7FFE1E1750951F0012042C /* UIScrollViewInfinitePagingController.m in Sources */,
+				EB7FFE211750951F0012042C /* UITableViewDataController.m in Sources */,
+				EB7FFE3A175097E70012042C /* APIController.m in Sources */,
+				EB7FFE3B175097E70012042C /* WrapperViewController.m in Sources */,
+				EB7FFE3C175097E70012042C /* PanelViewController.m in Sources */,
+				EB7FFE3D175097E70012042C /* ProjectsTableViewController.m in Sources */,
+				EB7FFE3E175097E70012042C /* PostViewController.m in Sources */,
+				EB7FFE3F175097E70012042C /* ClientsViewController.m in Sources */,
+				EB7FFE40175097E70012042C /* ConsultantsViewController.m in Sources */,
+				EB7FFE41175097E70012042C /* GroupsViewController.m in Sources */,
+				EB7FFE42175097E70012042C /* ProjectsViewController.m in Sources */,
+				EB7FFE43175097E70012042C /* LoginViewController.m in Sources */,
+				EB7FFE46175097E70012042C /* MembersViewController.m in Sources */,
+				EB7FFE47175097E70012042C /* AppDelegate.m in Sources */,
+				EB7FFE48175097E70012042C /* BadgeViewController.m in Sources */,
+				EB7FFE5D175098090012042C /* UtilitiesController.m in Sources */,
+				EB7FFE5F175098090012042C /* SlidingMenuViewController.m in Sources */,
+				EB7FFE62175098090012042C /* LogoutViewController.m in Sources */,
+				EB7FFE63175098090012042C /* code.m in Sources */,
+				EB7FFE75175098140012042C /* ProjectsItemViewCell.m in Sources */,
+				EB7FFE76175098140012042C /* CardViewController.m in Sources */,
+				EB7FFE7A175098140012042C /* DatabaseViewController.m in Sources */,
+				EB7FFE7E175098140012042C /* PresencaViewController.m in Sources */,
+				EB7FFE7F175098140012042C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -25,13 +25,13 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/jquery-ui-1.8.21.custom.min.css" type="text/css" />
 
-	<?php if ($globalDev == 1) { ?>
+	<?php if ($globalDev == 1 || true) { ?>
 	
 	<link rel="stylesheet" href="css/default.css" type="text/css" />
 	
 	<script src="js/jquery-1.7.2.min.js" type="text/javascript"></script>
 	<script src="js/jquery-ui-1.8.21.custom.min.js" type="text/javascript"></script>
-	<script src="js/default.js" type="text/javascript"></script>
+	<script src="js/default.php" type="text/javascript"></script>
 	
 	<?php } else { ?>
 	
