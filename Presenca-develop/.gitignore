@@ -6,6 +6,5 @@ Presenca.sublime-workspace
 .DS_Store
 .htaccess
 error_log
-uploads/
-connection.php
-social.php
+Web/uploads
+Web/includes/connection.php
