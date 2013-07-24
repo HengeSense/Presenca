@@ -155,7 +155,7 @@
 							");
 
 							if (!$insert) http_status_code(500);
-							
+
 						} elseif ($name == "historyText" && $value != "") {
 							// If we receive the text, we must be sure that the data has come too, so we search for it
 							for ($j = 0; $j < count($data); $j++) {
@@ -248,6 +248,7 @@
 								`password`, 
 								`position`, 
 								`groupID`, 
+								`calendarID`,
 								`permission`, 
 								`photo`, 
 								`birthday`, 
@@ -260,6 +261,7 @@
 								'" . Bcrypt::hash($parsedData["password"]) . "', 
 								'" . $parsedData["position"] . "',
 								1,
+								0,
 								1, 
 								'" . $parsedData["photo"] . "',
 								STR_TO_DATE('" . $parsedData["birthday"] . "','%d/%m/%Y'), 

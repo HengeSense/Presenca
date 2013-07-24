@@ -92,16 +92,30 @@
 							`companyID`,
 							`name`,
 							`password`,
-							`email`,
-							`permission`
+							`position`,
+							`groupID`, 
+							`calendarID`,
+							`permission`, 
+							`photo`, 
+							`birthday`, 
+							`telephone`, 
+							`email`, 
+							`active`
 						)
 					VALUES
 						(
 							'" . $companyID . "',
 							'" . $data["bossName"] . "',
 							'" . Bcrypt::hash($data["bossPassword"]) . "',
+							'Sem Cargo',
+							1,
+							0,
+							10,
+							'128-man.png',
+							FROM_UNIXTIME(0),
+							'',
 							'" . $data["bossEmail"] . "',
-							10
+							1
 						)
 				");
 
