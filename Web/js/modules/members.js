@@ -52,16 +52,16 @@ $(document).ready(function() {
 		var $info = $(this).parents(".badge");
 		
 		var memberID = $info.find("#memberID").val();
-		var vetor = $info.find("form").serializeArray();
+		var vector = $info.find("form").serializeArray();
 		
-		if ($info.np("consistentForm", vetor) == true) {
+		if ($info.np("consistentForm", vector) == true) {
 			
 			// We send the data to the server
 			$.post('ajaxMembers.php',
 			{	// We are gonna roll it down according to the badge content flow (so if the flow changes, the code has to change)
 				saveForm: "saveForm",
 				memberID: memberID,
-				data: vetor
+				data: vector
 			},
 			function(data) {
 				// And just need to make sure that the content was properly saved

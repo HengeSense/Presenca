@@ -1,9 +1,7 @@
 <?php include_once("includes/check/login.php"); ?>
 <?php
 
-		if (!$core->auth) logout();
-	
-	// Lembre-se de fazer decode do array recebido pelo jquery
+	if (!$core->auth) logout();
 
 // -------------------------------------- MENU --------------------------------------- //
 	
@@ -21,7 +19,7 @@
 	 */
 	if (isset($_POST['infoContainerExtra']) && isset($_POST['memberID'])) {
 		
-		$id = getAttribute($_POST['memberID']);
+		$memberID = getAttribute($_POST['memberID']);
 
     	$result = resourceForQuery(
     		"SELECT
@@ -35,11 +33,11 @@
     		LEFT JOIN
     			`group` ON `group`.`id` = `member`.`groupID`
     		WHERE 1
-    			AND `member`.`id` = $id
+    			AND `member`.`id` = $memberID
     			AND `member`.`companyID` = $core->companyID
     	");
 
-		for ($i = 0; $i < mysql_num_rows($result); $i++) {
+    	if (mysql_num_rows($result) > 0) {
 		
 			$birthday = mysql_result($result, 0, "birthday");
 			$telephone = mysql_result($result, 0, "telephone");
@@ -76,7 +74,7 @@
 						FROM
 							`memberHistory`
 						WHERE 1
-							AND `memberHistory`.`memberID` = $id
+							AND `memberHistory`.`memberID` = $memberID
 					");
 					
 					for ($i = 0; $i < mysql_num_rows($result); $i++) {
@@ -112,6 +110,8 @@
 			<?php } ?>	
 
 		<?php
+		} else {
+			http_status_code(400);
 		}
 
 	} else 
@@ -124,8 +124,6 @@
 		// We receive ther data
 		$data = getAttribute($_POST['data']);
 		$memberID = getAttribute($_POST['memberID']);
-		
-		$insert = false;
 		
 		if ($core->groupID == 3 /* RH */ || $core->permission >= 10 /* SUPER USER */ || $core->memberID == $memberID) {
 			// Update card
@@ -155,6 +153,9 @@
 									AND `member`.`id` = $memberID
 									AND `member`.`companyID` = $core->companyID
 							");
+
+							if (!$insert) http_status_code(500);
+							
 						} elseif ($name == "historyText" && $value != "") {
 							// If we receive the text, we must be sure that the data has come too, so we search for it
 							for ($j = 0; $j < count($data); $j++) {
@@ -173,6 +174,8 @@
 												'$value'
 											)
 									");
+
+									if (!$insert) http_status_code(500);
 								}
 							}
 						} else {
@@ -199,7 +202,11 @@
 									AND `member`.`id` = $memberID
 									AND `member`.`companyID` = $core->companyID
 							");
+
+							if (!$insert) http_status_code(500);
 						}
+					} else {
+						http_status_code(411);
 					}
 				}
 				
@@ -209,55 +216,69 @@
 			// New card			
 			} else {
 				// Array that will hold data as we want
-				$dataArray = array();
+				$parsedData = array();
 				
 				// Loop through it
 				for ($i = 0; $i < count($data); $i++) {
 					$object = $data[$i];
 					// Retrieve the values of each one
-					$name = getAttribute($object['name']);
-					$value = getAttribute($object['value']);
+					$name = $object['name'];
+					$value = $object['value'];
 					
-					$dataArray[$name] = $value;
+					$parsedData[$name] = $value;
 				}
 
-				$insert = resourceForQuery(
-					"INSERT INTO
-						`member`(
-							`companyID`, 
-							`name`, 
-							`password`, 
-							`position`, 
-							`groupID`, 
-							`permission`, 
-							`photo`, 
-							`birthday`, 
-							`telephone`, 
-							`email`, 
-							`active`
-						) VALUES (
-							$core->companyID, 
-							'" . $dataArray["name"] . "', 
-							'" . Bcrypt::hash($dataArray["password"]) . "', 
-							'" . $dataArray["position"] . "',
-							1,
-							1, 
-							'" . $dataArray["photo"] . "',
-							STR_TO_DATE('" . $dataArray["birthday"] . "','%d/%m/%Y'), 
-							'" . $dataArray["telephone"] . "', 
-							'" . $dataArray["email"] . "', 
-							1
-						)
+				$result = resourceForQuery(
+					"SELECT
+						`member`.`id`,
+					FROM
+						`member`
+					WHERE 1
+						AND BINARY `member`.`name` = '" . $parsedData["name"] . "'
 				");
 
-				// And now we can save the notification
-				notificationSave(array(), "<b>" . $dataArray["name"] . "</b> foi adicionado no sistema.", "members.php");
+				// See if there is any person with the same name
+				if (mysql_num_rows($result) == 0) {
+
+					$insert = resourceForQuery(
+						"INSERT INTO
+							`member`(
+								`companyID`, 
+								`name`, 
+								`password`, 
+								`position`, 
+								`groupID`, 
+								`permission`, 
+								`photo`, 
+								`birthday`, 
+								`telephone`, 
+								`email`, 
+								`active`
+							) VALUES (
+								$core->companyID, 
+								'" . $parsedData["name"] . "', 
+								'" . Bcrypt::hash($parsedData["password"]) . "', 
+								'" . $parsedData["position"] . "',
+								1,
+								1, 
+								'" . $parsedData["photo"] . "',
+								STR_TO_DATE('" . $parsedData["birthday"] . "','%d/%m/%Y'), 
+								'" . $parsedData["telephone"] . "', 
+								'" . $parsedData["email"] . "', 
+								1
+							)
+					");
+
+					if (!$insert) http_status_code(500);
+
+					// And now we can save the notification
+					notificationSave(array(), "<b>" . $parsedData["name"] . "</b> foi adicionado no sistema.", "members.php");
+				} else {
+					http_status_code(412);
+				}
 			}
-		}
-		
-		// And we confirm the insertion
-		if ($insert) {
-			echo "true";
+		} else {
+			http_status_code(406);
 		}
 		
 	} else 
@@ -266,7 +287,7 @@
 	 * Get all groups as a select element
 	 */
 	if (isset($_POST['groupAsSelect'])) {		
-		$core->printGroupAsSelect();
+		printGroupAsSelect();
 	} else
 	
 	/**
@@ -283,33 +304,40 @@
 					`member`.`active`
 				FROM
 					`member`
-				WHERE `member`.`id` = $memberID
-			");
-			$active = mysql_result($result, 0, "active");
-			
-			if ($active == 0) {
-				$active = 1;
-				$activeMessage = "ativo";
-			} else {
-				$active = 0;
-				$activeMessage = "inativo";
-			}
-		
-			$update = resourceForQuery(
-				"UPDATE
-					`member`
-				SET
-					`member`.`active` = $active
 				WHERE
 					`member`.`id` = $memberID
 			");
+
+			if (mysql_num_rows($result) == 1) {
+				$active = mysql_result($result, 0, "active");
+				
+				if ($active == 0) {
+					$active = 1;
+					$activeMessage = "ativo";
+				} else {
+					$active = 0;
+					$activeMessage = "inativo";
+				}
 			
-			notificationSave(array($memberID), "<b>$core->name</b> lhe tornou $activeMessage.", "groups.php");	
+				$update = resourceForQuery(
+					"UPDATE
+						`member`
+					SET
+						`member`.`active` = $active
+					WHERE
+						`member`.`id` = $memberID
+				");
 			
-			// And we confirm the insertion
-			if ($update) {
-				echo "true";
+				notificationSave(array($memberID), "<b>$core->name</b> lhe tornou $activeMessage.", "groups.php");	
+			
+				// And we confirm the insertion
+				if (!$update) http_status_code(500);
+
+			} else {
+				http_status_code(404);
 			}
+		} else {
+			http_status_code(406);
 		}
 
 	} else
@@ -333,16 +361,17 @@
 				WHERE
 					`member`.`id` = $memberID
 			");
-		}
 
-		if ($update) {
-			echo "true";
+			if (!$update) http_status_code(500);
+
+		} else {
+			http_status_code(406);
 		}
 
 	} else
 
 // ----------------------------------------------------------------------------------- //	
-	{}
 
+	{ http_status_code(501); }
 
 ?>

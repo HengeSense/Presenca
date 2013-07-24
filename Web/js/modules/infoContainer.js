@@ -138,17 +138,17 @@ $(document).ready(function() {
 
 			if (!($info.hasClass("newInfoContainer"))) {
 
-				var vetor = $info.find("form").serializeArray();
+				var vector = $info.find("form").serializeArray();
 						
 				// Since the function does not serialize the image, we have to do this ourselves
 				if ($info.find(".infoContainerImage img").size() != 0) {
-					vetor[vetor.length] = {
+					vector[vector.length] = {
 						"name": "photo",
 						"value": $info.find(".infoContainerImage img").attr("src")
 					}
 				}
 
-				if ($(this).np("consistentForm", vetor) != true) {
+				if ($(this).np("consistentForm", vector) != true) {
 					return;
 				}
 			}

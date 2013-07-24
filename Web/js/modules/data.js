@@ -14,12 +14,12 @@ $(document).ready(function() {
 		// Populate the old fields
 		var registrationData = JSON.parse(localStorage.getItem("registrationData")) || {};
 		if (Object.keys(registrationData).length != 0) {
-			var vetor = Object.keys(registrationData);
-			for (var i = 0; i<vetor.length; i++) {
-				if (registrationData[vetor[i]] != "") {
-					var $element = $form.find("#" + vetor[i]);
+			var vector = Object.keys(registrationData);
+			for (var i = 0; i<vector.length; i++) {
+				if (registrationData[vector[i]] != "") {
+					var $element = $form.find("#" + vector[i]);
 					if ($element.attr("readonly") != "readonly") {
-						$element.val(registrationData[vetor[i]]);
+						$element.val(registrationData[vector[i]]);
 					}
 				}
 			}

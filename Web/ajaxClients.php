@@ -1,10 +1,7 @@
 <?php include_once("includes/check/login.php"); ?>
 <?php
 
-		if (!$core->auth) logout();
-	
-	// Lembre-se de fazer decode do array recebido pelo jquery
-
+	if (!$core->auth) logout();
 	
 // -------------------------------------- MENU --------------------------------------- //
 	
@@ -17,7 +14,6 @@
 		$core->printClientForSearch($searchText);
 
 	} else 
-
 
 // -------------------------------------- CLIENTS --------------------------------------- //
 
@@ -114,9 +110,8 @@
 
 	} else 
 
-
-	
 // ----------------------------------------------------------------------------------- //	
-	{}
+
+	{ http_status_code(501); }
 	
 ?>

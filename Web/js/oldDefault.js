@@ -128,12 +128,12 @@
 				});
 			},
 
-			consistentForm: function(vetor) {
+			consistentForm: function(vector) {
 
 				var consistent = false;
 			
-				for (var i = 0; i < vetor.length; i++) {
-					if (vetor[i].value != "") {
+				for (var i = 0; i < vector.length; i++) {
+					if (vector[i].value != "") {
 						consistent = true;
 					} else {
 						consistent = false;
@@ -188,17 +188,17 @@
 				} else {
 					
 					var memberID = $info.find("#memberID").val();
-					var vetor = $info.find("form").serializeArray();
+					var vector = $info.find("form").serializeArray();
 					
 					// Since the function does not serialize the image, we have to do this ourselves
 					if ($info.find(".infoContainerImage img").size() != 0) {
-						vetor[vetor.length] = {
+						vector[vector.length] = {
 							"name": "photo",
 							"value": $info.find(".infoContainerImage img").attr("src")
 						}
 					}
 
-					if ($info.np("consistentForm", vetor) == true) {
+					if ($info.np("consistentForm", vector) == true) {
 
 						// And the part of url necessary for the ajax requisition
 						var destiny = $info.parents(".pageContent").attr("data-ajax");
@@ -208,7 +208,7 @@
 						{	// We are gonna roll it down according to the badge content flow (so if the flow changes, the code has to change)
 							saveForm: "saveForm",
 							memberID: memberID,
-							data: vetor
+							data: vector
 						},
 						function(data) {
 							// And just need to make sure that the content was properly saved
@@ -1236,17 +1236,17 @@ $(document).ready(function() {
 
 			if (!($info.hasClass("newInfoContainer"))) {
 
-				var vetor = $info.find("form").serializeArray();
+				var vector = $info.find("form").serializeArray();
 						
 				// Since the function does not serialize the image, we have to do this ourselves
 				if ($info.find(".infoContainerImage img").size() != 0) {
-					vetor[vetor.length] = {
+					vector[vector.length] = {
 						"name": "photo",
 						"value": $info.find(".infoContainerImage img").attr("src")
 					}
 				}
 
-				if ($(this).np("consistentForm", vetor) != true) {
+				if ($(this).np("consistentForm", vector) != true) {
 					return;
 				}
 			}
@@ -1665,16 +1665,16 @@ $(document).ready(function() {
 		var $info = $(this).parents(".badge");
 		
 		var memberID = $info.find("#memberID").val();
-		var vetor = $info.find("form").serializeArray();
+		var vector = $info.find("form").serializeArray();
 		
-		if ($info.np("consistentForm", vetor) == true) {
+		if ($info.np("consistentForm", vector) == true) {
 			
 			// We send the data to the server
 			$.post('ajaxMembers.php',
 			{	// We are gonna roll it down according to the badge content flow (so if the flow changes, the code has to change)
 				saveForm: "saveForm",
 				memberID: memberID,
-				data: vetor
+				data: vector
 			},
 			function(data) {
 				// And just need to make sure that the content was properly saved
