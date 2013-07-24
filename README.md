@@ -4,17 +4,9 @@ Presença
 Português
 ========
 
-Presença é um ERP open-source e minimalista. Criando ferramentas individuais que são simples de usar, o projeto pretende oferecer uma fácil integração para plataformas que desejem utilizar estas ferramentas dentro de seus sistemas.
+Presença é a melhor ferramenta para gerenciar presença dentro de ambientes pré-definidos, tipicamente empresas. Permite a criação de diferentes calendários, cada qual personalizável para atividades específicas. Dentro de cada calendário é possível definir o número de turnos, inclusive com várias pessoas em cada um, tolerância de atraso e tempo para intervalo.
 
-O Estúdio Trilha também oferece a versão pronta para uso do Presença, atualmente hospedada em http://negociopresente.com.br/ e disponível gratuitamente para uso público. Além da versão Web, conta também com aplicativos para iOS e Android.
-
-O projeto encontra-se em desenvolvimento, contando com:
-
-- Presença
-- Membros
-- Projetos
-- Grupos
-- Clientes
+O Estúdio Trilha também oferece a versão pronta para uso do Presença, atualmente hospedada em http://presenca.me/ e disponível gratuitamente para uso público. Além da versão Web, conta também com aplicativos para iOS e Android.
 
 Instalação
 --------
@@ -32,17 +24,9 @@ Presença é uma criação do Estúdio Trilha.
 English
 ========
 
-Presença is an open-source and minimalist ERP. By creating tools that are simple to use, the project aims to offer an easy way to integrate these tools inside custom platforms.
+Presence is the best tool to manage presence within pre-defined environments, typically companies. Allows the creation of different calendars, each customizable for specific activities. Within each calendar you can set the number of shifts, including several people in each, tolerance and break time.
 
-Estúdio Trilha, the company that actively supports the development of this project, also offers a hosted version at http://negociopresente.com.br/, which is also free to use. Beyond the Web version, iOS and Android apps are also present.
-
-The project already has several tools, which include:
-
-- Presença
-- Members
-- Projects
-- Groups
-- Clients
+Estúdio Trilha, the company that actively supports the development of this project, also offers a hosted version at http://presenca.me/, which is also free to use. Beyond the Web version, iOS and Android apps are also present.
 
 Installation
 --------
