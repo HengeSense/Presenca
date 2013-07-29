@@ -15,7 +15,7 @@
 					`member`.`id`,
 					`member`.`name`,
 					`memberDetail`.`password`,
-					SUM(`loginSessions`.`browser`) AS `sessionAmount`
+					COUNT(`loginSessions`.`id`) - SUM(`loginSessions`.`browser`) AS `sessionAmount`
 				FROM
 					`member`
 				INNER JOIN
@@ -25,10 +25,6 @@
 				WHERE 1
 					AND BINARY `member`.`name` = '$name'
 					AND `member`.`anonymous` = 0
-					AND (0
-						OR `loginSessions`.`browser` = 1
-						OR `loginSessions`.`browser` IS NULL
-					)
 				GROUP BY
 					`loginSessions`.`memberID`
 			");

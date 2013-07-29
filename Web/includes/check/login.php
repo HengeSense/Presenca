@@ -32,10 +32,6 @@ if (isset($_POST["name"]) && isset($_POST["password"])) {
 			`loginSessions` ON `loginSessions`.`memberID` = `member`.`id`
 		WHERE 1
 			AND BINARY `member`.`name` = '$name'
-			AND (0
-				OR `loginSessions`.`browser` = 1
-				OR `loginSessions`.`browser` IS NULL
-			)
 		GROUP BY
 			`loginSessions`.`memberID`
 	");
