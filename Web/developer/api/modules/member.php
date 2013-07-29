@@ -10,16 +10,27 @@
 			$remote = $_SERVER['REMOTE_ADDR'];
 
 			$result = resourceForQuery(
+			// echo (
 				"SELECT
 					`member`.`id`,
 					`member`.`name`,
-					`member`.`password`,
-					`member`.`sessionKey`,
-					`member`.`sessionAmount`
+					`memberDetail`.`password`,
+					SUM(`loginSessions`.`browser`) AS `sessionAmount`
 				FROM
 					`member`
-				WHERE
-					BINARY `member`.`name` = '$name'
+				INNER JOIN
+					`memberDetail` ON `memberDetail`.`id` = `member`.`id`
+				LEFT JOIN
+					`loginSessions` ON `loginSessions`.`memberID` = `member`.`id`
+				WHERE 1
+					AND BINARY `member`.`name` = '$name'
+					AND `member`.`anonymous` = 0
+					AND (0
+						OR `loginSessions`.`browser` = 1
+						OR `loginSessions`.`browser` IS NULL
+					)
+				GROUP BY
+					`loginSessions`.`memberID`
 			");
 
 			if (mysql_num_rows($result) == 1) {
@@ -27,50 +38,51 @@
 				$hash = mysql_result($result, 0, "password");
 
 				if (Bcrypt::check($password, $hash)) {
-					$core->auth = true;
+
 					$core->name = mysql_result($result, 0, "name");
 					$core->memberID = mysql_result($result, 0, "id");
 
-					// Allow to log in on up to three places at the same time
-					if (mysql_result($result, 0, "sessionAmount") < 2) {
-						$sessionKey = mysql_result($result, 0, "sessionKey");
-
-						$insert = resourceForQuery(
-							"UPDATE
-								`member`
-							SET
-								`member`.`sessionAmount` = `sessionAmount`+1
+					// Create a unique random id for the given session
+					do {
+						$sessionKey = Bcrypt::hash($hash);
+						$resultSession = resourceForQuery(
+							"SELECT
+								`loginSessions`.`id`
+							FROM
+								`loginSessions`
 							WHERE
-								`member`.`id` = $core->memberID
+								`loginSessions`.`sessionKey` = '$sessionKey'
 						");
-					} else {
-						// Create a unique random id for the given session
-						do {
-							$sessionKey = Bcrypt::hash($hash);
-							$resultSession = resourceForQuery(
-								"SELECT
-									`member`.`id`
-								FROM
-									`member`
-								WHERE
-									`member`.`sessionKey` = '$sessionKey'
-							");
-						} while (mysql_num_rows($resultSession) != 0);
 
-						// When we find the id, we store it on our database
-						$insert = resourceForQuery(
-							"UPDATE
-								`member`
-							SET
-								`member`.`sessionKey` = '$sessionKey',
-								`member`.`sessionAmount` = 0
-							WHERE
-								`member`.`id` = $core->memberID
+					} while (mysql_num_rows($resultSession) != 0);
+
+					// Store it on our database
+					$insert = resourceForQuery(
+						"INSERT INTO
+							`loginSessions`
+							(`memberID`, `browser`, `sessionKey`)
+						VALUES
+							($core->memberID, 0, '$sessionKey')
+					");
+					
+					// Remove the last session if the member went above the limit
+					if (mysql_result($result, 0, "sessionAmount") > 5) {
+						// Remove the last sessionKey from the database
+						$delete = resourceForQuery(
+							"DELETE FROM
+								`loginSessions`
+							WHERE 1
+								AND `loginSessions`.`memberID` = $core->memberID
+							ORDER BY
+								`loginSessions`.`id` ASC
+							LIMIT 1
 						");
 					}
 
 					// Only authenticate if the insertion was carried correctly
 					if ($insert) {
+						$core->auth = true;
+						
 						// Reset the login count
 						$insert = resourceForQuery(
 							"UPDATE

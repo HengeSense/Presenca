@@ -1,6 +1,7 @@
 <?php
-// Make sure that the attempt is valid
+// Include global header
 include_once(__DIR__ . "/../header.php");
+// Make sure that the attempt is valid
 include_once(__DIR__ . "/security.php");
 
 ////////////////////////////////////////
@@ -24,7 +25,7 @@ if (isset($_POST["name"]) && isset($_POST["password"])) {
 			`member`.`companyID`,
 			`member`.`groupID`,
 			`member`.`permission`,
-			COUNT(`loginSessions`.`id`) AS `sessionAmount`
+			SUM(`loginSessions`.`browser`) AS `sessionAmount`
 		FROM
 			`member`
 		LEFT JOIN
@@ -38,8 +39,8 @@ if (isset($_POST["name"]) && isset($_POST["password"])) {
 		GROUP BY
 			`loginSessions`.`memberID`
 	");
-	
-	if (mysql_num_rows ($result) == 1) {
+
+	if (mysql_num_rows($result) == 1) {
 		
 		$hash = mysql_result($result, 0, "password");
 
@@ -136,7 +137,7 @@ if (isset($_POST["name"]) && isset($_POST["password"])) {
 
 } elseif (isset($_COOKIE[$security->key])) {
 
-	$hash = htmlentities($_COOKIE[$security->key]);
+	$hash = getAttribute($_COOKIE[$security->key]);
 	$result = resourceForQuery(
 		"SELECT
 			`member`.`id`,
@@ -162,6 +163,7 @@ if (isset($_POST["name"]) && isset($_POST["password"])) {
 		$core->name = mysql_result($result, 0, "name");
 		$core->permission = mysql_result($result, 0, "permission");
 
+		// Reset the login count
 		$insert = resourceForQuery(
 			"UPDATE
 				`loginAttempts`
@@ -171,6 +173,13 @@ if (isset($_POST["name"]) && isset($_POST["password"])) {
 			WHERE
 				`loginAttempts`.`remote` = INET_ATON('$security->remote')
 		");
+	} else {
+		$filename = basename($_SERVER['PHP_SELF']);
+		$path = str_replace($filename, '', $_SERVER['PHP_SELF']);
+
+		setcookie($security->key, '', 0, $path);
+		header("Location: $path");	
+		exit();
 	}
 }
 

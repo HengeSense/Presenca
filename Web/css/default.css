@@ -788,7 +788,7 @@ form {
 	font-size: 230%;
 	font-weight: bold;
 	text-align: left;
-	margin: 80% 0px 0.4em 0px;
+	margin: 0.4em 0px 0.4em 0px;
 	text-shadow: #B4B4B4 1px 1px 0px;
 }
 
@@ -4150,7 +4150,6 @@ textarea.textInput {
 #offlineContent .title {
 	color: #2E2E2E;
 	font-size: 230%;
-	margin: 80% 0px 0.4em 0px;
 	text-shadow: #B4B4B4 1px 1px 0px;
 }
 
