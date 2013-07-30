@@ -34,18 +34,13 @@
 						<div class="box informationBox">
 							<p class="informationTitle">Informações gerais</p>
 							
-							<p class="firstParagraph">Antes de mais nada, <b>seja bem-vindo ao Garça!</b> Nossa plataforma foi criada para que você, dono de estabelecimento comercial, pudesse oferecer o melhor serviço para seu consumidor de forma simples, prática e com investimento zero.</p>
+							<p class="firstParagraph">Antes de mais nada, <b>seja bem-vindo ao Presença!</b> Nossa plataforma foi criada para que você, diretor de GP ou RH, pudesse oferecer o melhor serviço para acompanhar quando os membros da empresa estiveram no local.</p>
 							
-							<p>Em um prazo de no máximo 24h, um de nossos agentes irá confirmar o seu cadastro (talvez faça uma ligação para confirmar alguns dados), liberando o acesso de nossa plataforma para todos seus clientes. Neste meio tempo, fique a vontade para ir cadastrando seus cardápios, criando suas mesas, habilitando listas de reserva ou definindo os ajustes gerais de seu estabelecimento.</p>
-							
-							<p>Assim que for liberado, enviaremos para você um conjunto composto por adesivos, assim como um <i>banner</i> para indicar que seu estabelecimento é um parceiro <b>Garça</b>. Se quiser, poderá fixar no lugar mais visível possível, para que seus clientes vejam claramente a indicação sobre a plataforma. Caso queira mais adesivos para, por exemplo, colocar um em cada mesa ou para repor algum que foi perdido, fique a vontade para solicitar mais unidades.</p>
-							
-							<p>Nosso sistema funciona preferencialmente no <b>Google Chrome</b>, atualmente o melhor navegador do mercado. 
-							Se os computadores de seu restaurante ainda não o tem instalado, <a href="http://www.google.com/chrome" target="_blank">clique aqui para baixar</a>.</p>
+							<p>Nosso sistema funciona preferencialmente no <b>Google Chrome</b>, atualmente o melhor navegador do mercado. Se os computadores de seu restaurante ainda não o tem instalado, <a href="http://www.google.com/chrome" target="_blank">clique aqui para baixar</a>.</p>
 							
 							<p>E sempre que precisar de qualquer ajuda, consulte nossa central de suporte. Nós levamos seu negócio muito a sério e, por isso, nós nunca lhe deixaremos na mão.</p>
 							
-							<p class="signature">Obrigado, <br />Diretoria do Garça</p>
+							<p class="signature">Obrigado, <br />Diretoria do Presença</p>
 							
 							<!-- <p class="reminder">As informações abaixo também foram enviadas para seu email.</p> -->
 						</div>
