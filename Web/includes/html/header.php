@@ -19,6 +19,7 @@
 	<meta name='description' content='Controle de Presença, para sua empresa junior, simples e fácil.'>
 	<meta name='keywords' content='empresa junior, ej, brasil, controle, presenca, presença, universidade'>
 	<meta name='robots' content='all'>
+	<meta property="og:image" content="http://presenca.me/images/logo@512.png" />
 	<meta name="apple-itunes-app" content="app-id=594552266">
 	<meta name="google-play-app" content="app-id=com.estudiotrilha.negociopresente">
 
